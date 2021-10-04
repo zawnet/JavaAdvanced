@@ -3,7 +3,7 @@ package opp.math;
 public class MathEquation {
     private double leftValue;
     private double rightValue;
-    private char operationCode; //'a', 's', 'm', ''d
+    private OperationCode operationCode;
     private double result;
 
     public void setLeftValue(double leftValue) {
@@ -14,7 +14,7 @@ public class MathEquation {
         this.rightValue = rightValue;
     }
 
-    public void setOperationCode(char operationCode) {
+    public void setOperationCode(OperationCode operationCode) {
         this.operationCode = operationCode;
     }
 
@@ -23,23 +23,25 @@ public class MathEquation {
     }
 
     public void execute(){
-        CalcualtorBase calcualtorBase;
+        CalculateBase calcuate;
         switch (operationCode){
-            case 'a':
-                calcualtorBase = new Adder(leftValue, rightValue);
-                calcualtorBase.calculate();
-                result = calcualtorBase.getResult();
+            case ADD:
+                calcuate = new Adder(leftValue, rightValue);
+                calcuate.calculate();
+                result = calcuate.getResult();
                 break;
-            case 's':
-                calcualtorBase = new Substracter(leftValue,rightValue);
-                calcualtorBase.calculate();
-                result = calcualtorBase.getResult();
+            case SUBSTRACT:
+                calcuate = new Substracter(leftValue,rightValue);
+                calcuate.calculate();
+                result = calcuate.getResult();
                 break;
-            case 'm':
-                calcualtorBase = new Multiplier(leftValue,rightValue);
-                calcualtorBase.calculate();
-                result = calcualtorBase.getResult();
-            case '/':
+            case MULTIPLY:
+                calcuate = new Multiplier(leftValue,rightValue);
+                calcuate.calculate();
+                result = calcuate.getResult();
+            case DIVIDE:
+                calcuate = new Divider(leftValue, rightValue);
+                calcuate.calculate();
                 result = leftValue / rightValue;
                 break;
             default:
