@@ -6,9 +6,9 @@ import java.util.*;
 
 public class ViewsOverMaps {
 
-    private static Product door = new Product(1,"Wooden Door", 35);
-    private static Product floorPanel = new Product(2, "Floor Panel", 25);
-    private static Product window = new Product(3,"Window", 10);
+    public static Product door = new Product(1,"Wooden Door", 35);
+    public static Product floorPanel = new Product(2, "Floor Panel", 25);
+    public static Product window = new Product(3,"Window", 10);
 
     public static void main(String[] args) {
 
@@ -18,7 +18,10 @@ public class ViewsOverMaps {
         products.put(window.getId(),window);
 
         System.out.println(products);
+
+        //Pogranie zbioru kluczy
         Set<Integer> ids = products.keySet();
+        //usuniecie klucza powodu usuniecie z mapu
         ids.remove(1);
         System.out.println(ids);
         System.out.println(products);
