@@ -1,0 +1,10 @@
+Napisz strukturę danych reprezentującą stos (LIFO). Stos powinien spełniać następujące warunki:
+Podczas deklaracji stosu konieczne jest wskazanie typu danych elementów, jakie stos może przechowywać.
+Opcjonalnie można wskazać maksymalny rozmiar stosu.
+Stos powinien implementować interfejs definiujący metody
+add - dodanie elementu do stosu
+pop - zwrócenie ostatniego elementu ze stosu i jego usunięcie
+peek - zwrócenie ostatniego elementu ze stosu
+Każda z powyższych metod powinna rzucać wyjątek jeśli operacja nie jest możliwa do zrealizowania.
+Stos powinien pilnować by elementy w nim przechowywane były unikalne. Dodanie istniejącego elementu powinno skutkować rzuceniem wyjątku.
+Napisz testy jednostkowe testujące metody stosu

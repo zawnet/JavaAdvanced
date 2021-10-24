@@ -1,0 +1,5 @@
+Napisz program, który będzie tłumaczył słowa z języka polskiego na angielski zapisane w pliku.
+Słownik powinien znajdować się w oddzielnym pliku. Format danych powinien być zapisany w postaci
+słowo_po_angielsku:słowo_po_polsku
+Program powinien zapytać o ścieżkę do pliku zawierającego słowa do przetłumaczenia a następnie,
+po przetłumaczeniu, powinien zapytać o ścieżkę do pliku, w którym zostanie zapisany rezultat.
