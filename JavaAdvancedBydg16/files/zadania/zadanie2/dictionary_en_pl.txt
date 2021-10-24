@@ -1,0 +1,7 @@
+house:dom
+car:samochód
+cat:kot
+dog:pies
+human:człowiek
+project:projekt
+nice:fajny
