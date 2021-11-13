@@ -19,6 +19,7 @@ public class MapVsFlatMap {
         List<List<Integer>> mapped = numbers.stream()
                 .map(number -> Arrays.asList(number - 1, number, number + 1))
                 .collect(Collectors.toList());
+
         System.out.println(mapped);
 
         Pattern spaces = Pattern.compile("\\s+");
